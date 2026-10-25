@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  color: #082D49
+}
+
+a{
+  text-decoration: none;
+  color: #082D49
+}
+
+
+/* apply styles to <header> */
+header {
+  padding: 35px 35px;
+  background-color: Linen;
+}
+
+header h1 {
+  font-family: Gopher;
+  font-weight: bold;
+  font-size: 36px;
+  color: #082D49;
+  margin: 0;
+  display: inline;
+}
+header a {
+  text-decoration: none;
+  color: #082D49;
+}
+
+.button{
+  background-color: #082D49;
+  font-family: Gopher;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-left: 650px;
+}
+
+.button:hover{
+  background-color: #031119;
+  font-family: Gopher;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-left: 650px;
+}
+
+.linkedin{
+  position:absolute;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-top: 3px;
+}
+
+.linkedin:hover{
+  filter:contrast(200%) brightness(40%);
+}
+
+/* Hero Style Start */
+.intro {
+  background-image: url("../images/Background.jpg");  
+  min-height: 475px;
+  height: auto;
+overflow: auto;
+  position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 300px;
+  padding-right: 150px;
+
+}
+
+.intro img{
+  border-radius: 50%;
+  float: left;
+  display:inline-block;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+
+.intro {
+  color: #ffffff;
+  text-align: left;
+
+}
+
+.intro p {
+  line-height: 1.7;
+  color: #ffffff;
+  width: 80%;
+  font-weight: lighter;
+  font-size: 20px;
+  
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Hero Style end */
+
+section {
+  padding: 60px;
+}
+
+.section-title {
+  font-family: Gopher;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: -10px 100px 20px 100px;
+  display: inline-block;
+}
+
+.blog-posts {
+  text-align: center;
+}
+
+.blog-post {
+  width: 1200px;
+  margin: 0 auto 30px auto;
+  background: #BBEFEF;
+  overflow: auto;
+}
+
+
+.blog-post > img {
+  height: 300px;
+  width: 40%;
+  float: left;
+}
+.blog {
+  padding: 45px;
+  float: left;
+  width: 60%;
+  text-align: left;
+
+}
+
+.blog h3 {
+  font-weight: bold; 
+  font-family: Gopher;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.blog h4 {
+  font-weight: lighter;
+  font-size: 24px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.blog p {
+  font-weight: lighter;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+
+/* Blog image and Learn More section */
+.blog-image-column {
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+
+/* Keep original image size without stretching */
+.blog-post .blog-image-column img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  float: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Learn More directly below image */
+.blog-image-column .learn-more {
+  display: block;
+  padding: 15px 10px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #082D49;
+}
+
+/* Blue, underlined links */
+.blog-image-column .learn-more a {
+  color: #0056d6;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Darker blue on hover */
+.blog-image-column .learn-more a:hover {
+  color: #003399;
+}
+
+/* Preserve the original article column */
+.blog-post .blog {
+  width: 60%;
+  float: left;
+}
+
+.intro p + p {
+  margin-top: 18px;
+}
+/* Force the image and link to stay in the left column */
+.blog-post .blog-image-column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  flex: 0 0 40%;
+  float: none;
+  align-items: stretch;
+}
+
+/* Image at the top */
+.blog-post .blog-image-column img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  float: none;
+}
+
+/* Learn more directly underneath */
+.blog-post .blog-image-column .learn-more {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 15px 10px;
+  text-align: center;
+  clear: none;
+}
+
+/* Make the link blue and underlined */
+.blog-post .blog-image-column .learn-more a {
+  color: #0056d6;
+  text-decoration: underline;
+}
+
+/* Keep blog text in the right column */
+.blog-post .blog {
+  width: 60%;
+  flex: 0 0 60%;
+  float: none;
+}
+
+/* Keep blog image column and text side by side */
+.blog-post {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Left image column */
+.blog-post .blog-image-column {
+  width: 40%;
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  float: none;
+}
+
+/* Blog images */
+.blog-post .blog-image-column img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  float: none;
+}
+
+/* Learn more below image */
+.blog-post .blog-image-column .learn-more {
+  padding: 15px 10px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Right article column */
+.blog-post .blog {
+  width: 60%;
+  flex: 0 0 60%;
+  float: none;
+  padding: 45px;
+  text-align: left;
+}
+
+/* Blue underlined links */
+.blog-post .learn-more a {
+  color: #0056d6;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Keep intro paragraphs in the right column */
+.intro {
+  display: flow-root;
+}
+
+.intro p {
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+.intro-text {
+  display: flow-root;
+  overflow: hidden;
+}
+/* Add spacing between blog paragraphs */
+.blog p + p {
+  margin-top: 15px;
+}
+
+/* ==================================
+   RESPONSIVE DESIGN
+   Desktop, Tablet, and Mobile
+   ================================== */
+
+/* Prevent fixed blog width from overflowing */
+.blog-post {
+  max-width: 100%;
+}
+
+/* TABLET AND SMALL LAPTOP */
+@media screen and (max-width: 1024px) {
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .button,
+  .button:hover {
+    margin-left: 0;
+  }
+
+  .linkedin {
+    position: static;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .intro {
+    padding: 35px;
+    min-height: 475px;
+    height: auto;
+  }
+
+  .intro img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .intro p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  section {
+    padding: 35px 20px;
+  }
+
+  .blog-post .blog {
+    padding: 25px;
+  }
+
+  .blog h3 {
+    font-size: 27px;
+  }
+
+  .blog h4 {
+    font-size: 19px;
+  }
+}
+
+/* MOBILE PHONES */
+@media screen and (max-width: 600px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    display: block;
+  }
+
+  .button,
+  .button:hover {
+    margin-left: 0;
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+
+  .linkedin {
+    position: static;
+    margin: 0;
+  }
+
+  /* Introduction */
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    min-height: 0;
+    height: auto;
+    overflow: visible;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .intro img {
+    float: none;
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+  }
+
+  .intro-text {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .intro .section-title {
+    font-size: 28px;
+    margin: 10px 0 20px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .intro p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  /* Blog section */
+  section {
+    padding: 30px 15px;
+  }
+
+  .section-title {
+    font-size: 30px;
+    padding: 0;
+    margin: 15px 0 25px;
+  }
+
+  .blog-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .blog-post .blog-image-column {
+    width: 100%;
+    flex: none;
+    float: none;
+  }
+
+  .blog-post .blog-image-column img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .blog-post .blog-image-column .learn-more {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .blog-post .blog {
+    width: 100%;
+    flex: none;
+    float: none;
+    padding: 22px 18px;
+  }
+
+  .blog h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .blog h4 {
+    font-size: 17px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .blog p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
